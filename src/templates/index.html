@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,6 +14,45 @@
   <body>
     <header>
       <app-bar></app-bar>
+      <nav
+        style="
+          width: 100%;
+          height: 100vh;
+          background-color: #f1c40f;
+          z-index: 999;
+          position: absolute;
+          top: 0;
+        "
+      >
+        <div
+          style="
+            height: 13%;
+            width: 100%;
+            background-color: #d4ad0f;
+            position: absolute;
+            z-index: 999999;
+            top: 0;
+          "
+        />
+        <ul
+          style="
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            gap: 20px;
+            font-size: 20px;
+            font-weight: 600;
+          "
+        >
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Favorite</a></li>
+          <li>
+            <a href="https://www.linkedin.com/in/rifkyalfarez">About Us</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
       <app-hero></app-hero>

@@ -59,16 +59,20 @@ header {
   font-family: 'Dancing Script', cursive;
 }
 
-nav ul {
+.navbar ul {
   display: flex;
   gap: 50px;
   font-size: 20px;
   font-weight: 500;
 }
 
-nav ul li:hover {
+.navbar ul li:hover {
   color: #f1c40f;
   transition: color 0.3s ease-in-out;
+}
+
+.mobile-nav {
+  display: none;
 }
 
 .hero-section {
