@@ -7,7 +7,7 @@ class AppBar extends HTMLElement {
     this.innerHTML = `
       <header>
       <div class="app-bar">
-        <h1 class="logo">RifkyResto.</h1>
+        <h1 class="logo"><a href="/">RifkyResto.</a></h1>
         <nav class="desktop-nav">
           <ul>
             <li><a href="/">Home</a></li>
@@ -17,7 +17,7 @@ class AppBar extends HTMLElement {
             </li>
           </ul>
         </nav>
-        <div class="hamburger" onclick="navToggle()">
+        <div class="hamburger">
           <div></div>
           <div></div>
           <div></div>
@@ -34,6 +34,9 @@ class AppBar extends HTMLElement {
       </nav>
     </header>
       `;
+
+    const hamburger = this.querySelector('.hamburger');
+    hamburger.addEventListener('click', navToggle);
   }
 }
 

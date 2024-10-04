@@ -23,5 +23,33 @@
   .desktop-nav ul li {
     font-size: 20px;
     font-weight: 600;
+    color: #fff;
+
+    transition: color 0.3s ease-in-out;
+  }
+
+  .desktop-nav ul li:hover {
+    color: #a88203;
+  }
+
+  .hero-content {
+    align-items: flex-start;
+    text-align: left;
+    padding: 0 50px;
+  }
+
+  .hero-content h1 {
+    font-size: 40px;
+    width: 500px;
+  }
+
+  .hero-content p {
+    font-size: 20px;
+    width: 600px;
+  }
+
+  .skip-content-btn {
+    font-size: 20px;
+    margin-top: 20px;
   }
 }
