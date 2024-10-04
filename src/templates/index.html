@@ -12,32 +12,6 @@
     <title>Restaurant Apps | Rifky Alfarez</title>
   </head>
   <body>
-    <header>
-      <div class="app-bar">
-        <h1 class="logo">RifkyResto.</h1>
-        <div class="hamburger" onclick="navToggle()">
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-      </div>
-      <nav>
-        <ul>
-          <li>Home</li>
-          <li>Favorite</li>
-          <li>About Us</li>
-        </ul>
-      </nav>
-    </header>
-
-    <script>
-      function navToggle() {
-        const nav = document.querySelector('nav');
-        const hamburger = document.querySelector('.hamburger');
-
-        nav.classList.toggle('active');
-        hamburger.classList.toggle('active');
-      }
-    </script>
+    <app-bar></app-bar>
   </body>
 </html>

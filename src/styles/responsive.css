@@ -1,0 +1,27 @@
+@media (min-width: 768px) {
+  .app-bar {
+    padding: 30px 50px;
+  }
+
+  .logo {
+    font-size: 35px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .desktop-nav {
+    display: block;
+  }
+
+  .desktop-nav ul {
+    display: flex;
+    gap: 20px;
+  }
+
+  .desktop-nav ul li {
+    font-size: 20px;
+    font-weight: 600;
+  }
+}

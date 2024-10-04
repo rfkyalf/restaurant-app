@@ -20,6 +20,10 @@ body {
   font-weight: bold;
 }
 
+.desktop-nav {
+  display: none;
+}
+
 .hamburger div {
   transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;
 }
@@ -59,7 +63,7 @@ body {
   transform: translateY(-6px) rotate(-45deg);
 }
 
-nav {
+.mobile-nav {
   position: fixed;
   top: 0;
   left: -100vw;
@@ -69,11 +73,11 @@ nav {
   transition: left 0.3s ease-in-out;
 }
 
-nav.active {
+.mobile-nav.active {
   left: 0;
 }
 
-nav ul {
+.mobile-nav ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
