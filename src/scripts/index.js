@@ -3,4 +3,5 @@ import '../styles/main.css';
 import '../styles/responsive.css';
 import '../styles/reset.css';
 import './components/app-bar';
-// import './components/app-hero';
+import './components/app-hero';
+import './components/app-footer';

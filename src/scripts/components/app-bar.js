@@ -1,6 +1,16 @@
 class AppBar extends HTMLElement {
   connectedCallback() {
     this.render();
+    window.addEventListener('scroll', this.handleScroll.bind(this));
+  }
+
+  handleScroll() {
+    const appBar = this.querySelector('.app-bar');
+    if (window.scrollY > 5) {
+      appBar.classList.add('scrolled');
+    } else {
+      appBar.classList.remove('scrolled');
+    }
   }
 
   render() {
@@ -36,16 +46,16 @@ class AppBar extends HTMLElement {
       `;
 
     const hamburger = this.querySelector('.hamburger');
-    hamburger.addEventListener('click', navToggle);
+    hamburger.addEventListener('click', this.navToggle.bind(this));
   }
-}
 
-function navToggle() {
-  const nav = document.querySelector('.mobile-nav');
-  const hamburger = document.querySelector('.hamburger');
+  navToggle() {
+    const nav = this.querySelector('.mobile-nav');
+    const hamburger = this.querySelector('.hamburger');
 
-  nav.classList.toggle('active');
-  hamburger.classList.toggle('active');
+    nav.classList.toggle('active');
+    hamburger.classList.toggle('active');
+  }
 }
 
 customElements.define('app-bar', AppBar);

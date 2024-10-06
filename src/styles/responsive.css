@@ -1,6 +1,12 @@
 @media (min-width: 768px) {
   .app-bar {
     padding: 30px 50px;
+    transition: padding 0.6s ease-in-out;
+  }
+
+  .app-bar.scrolled {
+    padding: 20px 50px;
+    transition: padding 0.6s ease-in-out;
   }
 
   .logo {
@@ -17,7 +23,7 @@
 
   .desktop-nav ul {
     display: flex;
-    gap: 20px;
+    gap: 50px;
   }
 
   .desktop-nav ul li {
@@ -51,5 +57,12 @@
   .skip-content-btn {
     font-size: 20px;
     margin-top: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  footer div {
+    font-size: 20px;
+    padding: 30px 0;
   }
 }
