@@ -58,11 +58,48 @@
     font-size: 20px;
     margin-top: 20px;
   }
+
+  .restaurant-item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .restaurant-image {
+    height: 300px;
+  }
+
+  .restaurant-info {
+    margin: 0;
+  }
+
+  .restaurant-info h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #0a0a0a;
+  }
+
+  .restaurant-info p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #262626;
+  }
+
+  .restaurant-info div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 22px;
+  }
 }
 
 @media (min-width: 1024px) {
   footer div {
     font-size: 20px;
     padding: 30px 0;
+  }
+
+  .restaurant-image {
+    height: 400px;
   }
 }

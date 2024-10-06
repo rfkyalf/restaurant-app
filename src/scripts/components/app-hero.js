@@ -14,7 +14,7 @@ class AppHero extends HTMLElement {
           pengalaman makan mewah. Baca ulasan autentik dan temukan tempat
           makan sempurna untuk setiap momen.
         </p>
-        <a href="#" class="skip-content-btn">Mulai Jelajahi</a>
+        <a href="#restaurant-list" class="skip-content-btn">Mulai Jelajahi</a>
       </div>
     </section>
       `;
