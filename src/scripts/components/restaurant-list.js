@@ -25,6 +25,7 @@ class RestaurantList extends HTMLElement {
       this.innerHTML = '';
       restaurantsData.forEach((restaurant) => {
         const restaurantItem = document.createElement('div');
+        restaurantItem.setAttribute('tabindex', 0);
         restaurantItem.classList.add('restaurant-item');
         restaurantItem.innerHTML = `
             <img src="${restaurant.pictureId}" alt="${
