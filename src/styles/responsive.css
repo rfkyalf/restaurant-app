@@ -15,6 +15,10 @@
     display: none;
   }
 
+  .app-bar button {
+    display: none;
+  }
+
   .desktop-nav {
     display: block;
   }
@@ -30,6 +34,12 @@
     color: #fff;
 
     transition: color 0.3s ease-in-out;
+  }
+
+  .desktop-nav ul li a {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
   }
 
   .desktop-nav ul li:hover {

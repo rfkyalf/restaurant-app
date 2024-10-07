@@ -2,6 +2,22 @@ body {
   font-family: 'Lora', serif;
 }
 
+.skip-to-content {
+  position: absolute;
+  top: -40px;
+  left: 10px;
+  background: #ca8a04;
+  color: #ffffff;
+  padding: 10px;
+  text-decoration: none;
+  z-index: 9999;
+  transition: top 0.3s;
+}
+
+.skip-to-content:focus {
+  top: 10px;
+}
+
 .app-bar {
   position: fixed;
   top: 0;
@@ -26,11 +42,27 @@ body {
   transition: background-color 0.3s ease-in-out, padding 0.3s ease-in-out;
 }
 
+.app-bar button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  min-height: 44px;
+  min-width: 44px;
+  display: inline-block;
+  padding-left: 24px;
+}
+
 .logo {
   font-family: 'Dancing Script', cursive;
   font-size: 24px;
   font-weight: bold;
   color: #fff;
+}
+
+.logo a {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
 }
 
 .desktop-nav {
@@ -101,6 +133,12 @@ body {
   color: #fff;
 }
 
+.mobile-nav ul li a {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
+
 .hero img {
   position: absolute;
   width: 100%;
@@ -135,7 +173,7 @@ body {
 }
 
 .skip-content-btn {
-  padding: 10px 40px;
+  padding: 13px 50px;
   background-color: #a88203;
   font-size: 15px;
   font-weight: 600;
@@ -147,28 +185,6 @@ body {
 
 .skip-content-btn:hover {
   background-color: #e8b431;
-}
-
-footer div {
-  padding: 20px 0;
-  background-color: #0a0a0a;
-  color: #fafafa;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 15px;
-  font-weight: 400;
-}
-
-footer div a {
-  color: #e8b431;
-  font-weight: bold;
-
-  transition: color 0.3s ease-in-out;
-}
-
-footer div a:hover {
-  color: #a88203;
 }
 
 .restaurant-item {
@@ -210,4 +226,30 @@ footer div a:hover {
   height: 200px;
   object-fit: cover;
   object-position: center;
+}
+
+footer div {
+  padding: 20px 0;
+  background-color: #0a0a0a;
+  color: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 400;
+  min-height: 44px;
+}
+
+footer div a {
+  color: #e8b431;
+  font-weight: bold;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+
+  transition: color 0.3s ease-in-out;
+}
+
+footer div a:hover {
+  color: #a88203;
 }

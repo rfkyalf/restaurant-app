@@ -18,6 +18,11 @@ class AppBar extends HTMLElement {
       <header>
       <div class="app-bar">
         <h1 class="logo"><a href="/">RifkyResto.</a></h1>
+        <button class="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </button>
         <nav class="desktop-nav">
           <ul>
             <li><a href="/">Home</a></li>
@@ -26,12 +31,7 @@ class AppBar extends HTMLElement {
               <a href="https://www.linkedin.com/in/rifkyalfarez">About Us</a>
             </li>
           </ul>
-        </nav>
-        <div class="hamburger">
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
+        </nav> 
       </div>
       <nav class="mobile-nav">
         <ul>
